@@ -11,10 +11,11 @@ img {
 /* Sidebar */
 
 logo {
-	background-color: #43c5ea;
-	padding: 30px;
+	background-color: none;
+    object-position:center;
+	padding-left: 50px;
 	border-radius: 3px;
-	width: 100%;
+	width: 70%;
 	display: block;
 	transition: all .3s;
 	-moz-transition: all .3s;
@@ -68,7 +69,7 @@ nav a:hover {
 	color: #444;
 }
 contact a {
-	background-color: #44c5ea;
+	background-color: #343434;
 	border-radius: 3px;
 	display: block;
 	padding: 0px 5px;
@@ -86,7 +87,7 @@ contact a:hover {
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	background-color: #ffffff;
-	color: #43c5ea;
+	color: #f5ad18;
 }
 worksnav h1 {
 	font-size: 20px;
@@ -149,7 +150,7 @@ footer img:hover {
 	-webkit-transition: -webkit-transform 0.3s ease-in-out;
 	-moz-transition: -moz-transform 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out;
-	background-color: #44c5ea;
+	background-color: #343434;
 }
 .caption1::before {
 	content: attr(data-title);
@@ -180,7 +181,7 @@ text h1 {
 	font-size: 35px;
 }
 text h2 {
-	color: rgb(67, 197, 234);
+	color: #f5ad18;
 	font-size: 25px;
 	margin-top: -15px;
 }
@@ -277,7 +278,7 @@ about h1 {
 /* Button style */
 
 .button {
-	background-color: #44c5ea;
+	background-color: #343434;
 	border-radius: 3px;
 	padding: 9px 15px;
 	color: #ffffff;
@@ -339,13 +340,13 @@ input , textarea {
 }
 
 .submit-button {
-	background-color: #42c5ea;
+	background-color: #343434;
 	color: #ffffff;
 	border: 0px;
 }
 
 .submit-button:active {
-	background-color: #7ed7f0;
+	background-color: #F5AD18;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
