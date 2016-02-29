@@ -83,11 +83,14 @@ h5,
 h6 {
    font-weight: normal;
 }
+
+
 p,li {
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 0 20px;
+    letter-spacing: -1px;
 }
 small {
     font-weight: 300;
