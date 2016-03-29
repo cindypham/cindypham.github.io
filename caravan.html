@@ -1,202 +1,332 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cindy Pham</title>
- 
-    <link rel="stylesheet" href="style.css" media="screen" />
-   
+	<head>
+		<style data-above-the-fold="true">
+			.button{text-decoration:none;cursor:pointer;display:inline-block;box-sizing:border-box;line-height:1.125;padding:.5em 1rem;margin:0;letter-spacing:.09rem;height:auto;border:1px solid transparent;-webkit-appearance:none}
+			::-moz-focus-inner{border:0;padding:0}
+			.button:hover{text-decoration:none}
+			body{margin:0}
+			svg{max-height:100%}
+			figure{margin:0}
+			body{font-family:"Expletus Sans",Helvetica,sans-serif;line-height:1.875;font-size:100%;-webkit-font-smoothing:antialiased;letter-spacing:.02rem}
+			h1{font-family:"Expletus Sans",Helvetica,sans-serif;font-weight:700;line-height:1.25;margin-top:1em;margin-bottom:.5em}
+			p,ul{font-size:1.125rem;margin-top:0;margin-bottom:1rem}
+			ul{padding-left:2rem}
+			img{border:0;height:auto;max-width:100%;vertical-align:middle}
+			h1{font-size:3rem}
+			.h3{font-size:1.75rem}
+			.list-reset{list-style:none;padding-left:0}
+			body{color:#5c5c5c}
+			a{color:#143893;text-decoration:none}
+			a:hover{text-decoration:underline}
+			.button-blue-outline{line-height:1;color:#143893;background-color:transparent;border-radius:0;border:2px solid #143893;transition-duration:.1s;transition-timing-function:ease-out;transition-property:box-shadow,background-color}
+			.button-blue-outline:hover{color:#fff;background-color:#143893}
+			.button-blue-outline:active{box-shadow:inset 0 3px 3px 0 rgba(0,0,0,.25)}
+			.button-blue-outline:focus{outline:0;box-shadow:0 0 0 2px rgba(255,255,255,.5),0 0 1px 4px rgba(20,56,147,.5)}
+			.button-blue-outline:disabled{color:#143893;background-color:transparent;opacity:.5}
+			.button-gray:is-active{box-shadow:inset 0 0 0 32px rgba(0,0,0,.125),inset 0 2px 3px 0 rgba(0,0,0,.25)}
+			.field-dark::placeholder{color:rgba(255,255,255,.75)}
+			.bg-blue{background-color:#143893}
+			.backtotop{height:48px;width:48px;border-radius:50%;bottom:1rem;right:1rem;text-indent:100%;white-space:nowrap;background:url(images/top-arrow.svg) center 50% no-repeat rgba(0,0,0,.8);visibility:hidden;opacity:0;-webkit-transition:opacity .3s 0s,visibility 0s .3s;-moz-transition:opacity .3s 0s,visibility 0s .3s;transition:opacity .3s 0s,visibility 0s .3s}
+			ul.columns{overflow:hidden;list-style:none;padding:0}
+			ul.columns li:last-child{margin-right:0}
+			.column{float:left;box-sizing:border-box;margin-right:4%}
+			.columns-2 .column{width:100%}
+			@media (min-width:52em){.columns-2 .column{width:48%}}
+			footer{height:80px;line-height:80px;border:1px solid #eee}
+			footer .social a{float:left;line-height:80px;text-decoration:none;color:#fff;cursor:pointer;width:20%;font-size:1.4em}
+			footer .social a:hover{background-color:#333}
+			footer .social .linked{background-color:#1E83AE}
+			footer .social .face{background-color:#3D5B94}
+			footer .social .tweet{background-color:#3DACDD}
+			footer .social .support{background-color:#143893;font-size:1rem;width:40%;letter-spacing:.1em}
+			footer .copyright p{font-size:1rem;line-height:80px;text-transform:capitalize;letter-spacing:1px;margin:0;text-align:center}
+			footer .copyright p .made{display:none}
+			@media (min-width:52em){footer .copyright p{text-align:left}
+			footer .copyright p .made{display:inline-block}}
+			.header{background:rgba(0,0,0,.5);height:80px;width:100%;z-index:9999}
+			.logo{top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:1rem}
+			.logo a{color:#fff;text-decoration:none;font-family:"Text Me One",Helvetica,sans-serif}
+			.main-nav{top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:5rem}
+			.main-nav a{color:#fff;text-decoration:none;font-size:.875rem}
+			.main-nav a:hover{border-bottom:1px solid #efcc00}
+			.responsive-nav-trigger{right:1rem;top:15px;height:48px;width:48px;background:rgba(0,0,0,.5);border-radius:50%}
+			.responsive-nav-trigger .menu-icon{left:50%;top:50%;bottom:auto;right:auto;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);-o-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);width:18px;height:2px;background-color:#fff;-webkit-transition:background-color .3s;-moz-transition:background-color .3s;transition:background-color .3s}
+			.responsive-nav-trigger .menu-icon::after,.responsive-nav-trigger .menu-icon::before{content:'';width:100%;height:100%;position:absolute;background-color:#fff;right:0;-webkit-transition:-webkit-transform .3s,top .3s,background-color 0s;-moz-transition:-moz-transform .3s,top .3s,background-color 0s;transition:transform .3s,top .3s,background-color 0s}
+			.responsive-nav-trigger .menu-icon::before{top:-5px}
+			.responsive-nav-trigger .menu-icon::after{top:5px}
+			.responsive-nav{height:100%;width:100%;background:rgba(0,0,0,.5);padding:50px 0;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:auto;-webkit-overflow-scrolling:touch;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;transition-property:transform;-webkit-transition-duration:.4s;-moz-transition-duration:.4s;transition-duration:.4s}
+			.responsive-nav li{margin:.2em 0;text-transform:capitalize}
+			.responsive-nav li:first-child{padding-top:80px}
+			.responsive-nav li a{color:#fff;text-decoration:none}
+			.responsive-nav li a:hover{color:#efcc00}
+			.bg-blue{-webkit-animation:color-pulse 10s infinite;-moz-animation:color-pulse 10s infinite;-o-animation:color-pulse 10s infinite;animation:color-pulse 10s infinite;background-image:url(../../images/noise.png)}
+			.page-title{font-size:2rem;color:#fff}
+			.breadcrumb{padding:0}
+			.breadcrumb li:before{content:"/";color:#efcc00}
+			.breadcrumb li:first-child .button-narrow{padding-left:0}
+			.breadcrumb li:first-child:before{display:none}
+			.breadcrumb a{color:#efcc00}
+			.breadcrumb a:hover{color:#fff}
+			@media (min-width:40em){.header{height:120px;background:0 0;box-shadow:none}
+			.responsive-nav-trigger{right:5rem}
+			.logo{left:5rem}
+			.page-title{font-size:2.5rem;color:#fff}}
+			@media (min-width:64em){.header{-webkit-transition:background-color .3s;-moz-transition:background-color .3s;transition:background-color .3s;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden}}
+			.icon{width:1em;height:1em;position:relative;top:-.125em;vertical-align:middle;fill:currentcolor}
+			.portfolio-item p:nth-of-type(1){font-size:1.125rem;line-height:1.875}
+			.portfolio-item .pagination .button{padding:0}
+			.portfolio-item .pagination .button:hover{color:#efcc00}
+			.container{max-width:64em;margin-left:auto;margin-right:auto}
+			@media (min-width:40em){.sm-col{float:left;box-sizing:border-box}
+			.sm-col-12{width:100%}}
+			@media (min-width:52em){.md-col-6{width:50%}}
+			@media (min-width:64em){.lg-col-6{width:50%}}
+			.relative{position:relative}
+			.absolute{position:absolute}
+			.fixed{position:fixed}
+			.top-0{top:0}
+			.left-0{left:0}
+			.z2{z-index:2}
+			.z4{z-index:4}
+			.button-narrow{padding-left:.5rem;padding-right:.5rem}
+			.block{display:block}
+			.inline-block{display:inline-block}
+			.overflow-hidden{overflow:hidden}
+			.clearfix:after,.clearfix:before{content:" ";display:table}
+			.clearfix:after{clear:both}
+			.left{float:left}
+			.right{float:right}
+			.md-show{display:none!important}
+			@media (min-width:52em){.md-show{display:block!important}}
+			@media (min-width:52em){.md-hide{display:none!important}}
+			.bold{font-weight:700}
+			.caps{text-transform:uppercase;letter-spacing:.1em}
+			.center{text-align:center}
+			.m0{margin:0}
+			.ml2{margin-left:1rem}
+			.mb4{margin-bottom:4rem}
+			.p2{padding:1rem}
+			.px3{padding-left:2rem;padding-right:2rem}
+			.py4{padding-top:4rem;padding-bottom:4rem}
+		</style>
 
-    <link href='http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 
-     <script src="scripts/modernizr.js"></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cindy Pham</title>
+		<meta name="description" content="Portfolio Premium Portfolio Theme" />
+		<meta name="keywords" content="theme,template,kirby,portfolio,personal" />
+		<meta name="author" content="Aristotheme" />
+		<link rel="shortcut icon" href="../favicon.ico">
 
-</head>
+		<!-- CSS -->
+		<script>
+			var cb = function() {
+			var l = document.createElement('link'); l.rel = 'stylesheet';
+			l.href = 'css/min/all.min.css';
+			var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+			};
+			var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+			webkitRequestAnimationFrame || msRequestAnimationFrame;
+			if (raf) raf(cb);
+			else window.addEventListener('load', cb);
+		</script>
 
-<body>
+		<!-- no JS? Put fallback CSS links here. -->
+		<noscript>
+			<link href="css/min/all.min.css" rel="stylesheet">
+		</noscript>
+		<!-- /CSS -->
+	</head>
+	<body>
+
+		<header class="header absolute top-0 left-0">
+			<div class="logo absolute block h3 m0 caps bold"><a href="index.html">cindy pham</a></div>
+
+			<nav>
+				<ul class="main-nav absolute md-show">
+					<li class="inline-block ml2 caps bold"><a href="index.html">Home</a></li>
+					<li class="inline-block ml2 caps bold"><a href="about.html">About</a></li>
+					<li class="inline-block ml2 caps bold"><a href="cindyphamresume.pdf">resume</a></li>
+				</ul>
+			</nav> <!-- nav -->
+
+			<a class="responsive-nav-trigger absolute md-hide inline-block" href="#0">
+				<span class="menu-icon absolute"></span>
+			</a> <!-- responsive-nav-trigger -->
+		</header>
+
+		<nav>
+			<ul class="responsive-nav fixed left-0 top-0 center z2">
+				<li><a class="caps inline-block p2 bold" href="index.html">Home</a></li>
+				<li><a class="caps inline-block p2 bold" href="about.html">About</a></li>
+				<li><a class="caps inline-block p2 bold" href="cindyphamresume.pdf">resume</a></li>
+			</ul>
+		</nav>
+
+		<section id="hero">
+			<div id="" style="background-image:url(images/caravan_banner.png); height: 200px; padding-top:177px"> 
+				<div class="container"> 
+					<h1 class="page-title m0 relative caps">Caravan</h1>
+					
+					<nav class="breadcrumb" role="navigation">
+						<ul class="list-reset">
+                            <li class="inline-block"><font color=ffffff><em>Easy come, easy go - a collaborative kind of road trip</em></font></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
 
 
+		<main id="main" class="py4 px3" role="main">
+
+			<section class="portfolio-item py4 container overflow-hidden">
+				<div class="clearfix">
+                    
+                    
+                    <p>
+Less fuel, less pollution, less stress: these are some of the many benefits of carpooling. And when it comes to traveling long-distance, saving gas and money becomes exponentially more important per mile.</p>
+
+<p>Caravan is a long-distance ride-sharing app concepted by YouTube intern Shane Smith. Along with UI designer Christian Bergstrom, I helped create the branding identity for the carpooling platform. My deliverables included designing the logo, website, supergraphics and illustrations for a compelling product.
+                    </p>
+                    
+<br><br><br>
+                    
+                    
+
+					<ul class="columns columns-2">
+						<li class="column">
+                            <h3>Mission</h3>
+<p>
+To make sure our collaboration started off on the right foot, I handed Smith and Bergstrom a branding questionnaire to help me get a better understanding of Caravan's identity. I compiled the answers before sketching out ideas and generated the following consensus:</p>
+
+                <ul>
+                
+                    <li><strong>The mission is about connecting people</strong> who need to commute long distsances together in a friendly, trustworthy, and straightforward experience.</li>
+                        
+                    <li><strong>Benefits include</strong>  long distance, automatic matching, and pick-up/drop-off coordination.</li>
+                    <li><strong>Friendliness and trustworthiness</strong> are important qualities. Caravan can be seen as a carpool with fun coworkers or a road trip.</li>
+                
+                </ul>                        
     
-    <a href="#cd-nav" class="cd-nav-trigger">Menu 
-        <span class="cd-nav-icon"></span>
+                            
+                        
+                        </li>
 
-        <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-            <circle fill="transparent" stroke="#90D4C5" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-        </svg>
-    </a>
-        
-    <div id="cd-nav" class="cd-nav">
-        <div class="cd-navigation-wrapper">
-            <div class="cd-half-block">
-
-
-                <nav>
-                    <ul class="cd-primary-nav">
-                        <li><a href="index.html" class="selected">Showcase</a></li>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="cindyphamresume.pdf">Resume</a></li>
-                    </ul>
-                </nav>
-            </div><!-- .cd-half-block -->
-            
-            <div class="cd-half-block">
-                <address>
-                    <ul class="cd-contact-info">
-                        <li><a href="mailto:emailcindypham@gmail.com">emailcindypham@gmail.com</a></li>
-                        <li>408-406-7449</li>
-                    </ul>
-                    <ul class="cd-contact-socials">
-                        <li><a href="http://linkedin.com/in/cinpham">LinkedIn</a></li>
-                        <li><a href="http://facebook.com/cindyphamfb">Facebook</a></li>
-                        <li><a href="http://instagram.com/peein2thewind">Instagram</a></li>   
-                        <li><a href="http://peeintothewind.tumblr.com">Tumblr</a></li>    
-                    </ul>
-                </address>
-            </div> <!-- .cd-half-block -->
-        </div> <!-- .cd-navigation-wrapper -->
-    </div> <!-- .cd-nav -->
-
-    <div class="site-container">
-
-        <img src="img/caravan_photorealistic.png">
-
-        <section class="site-content">
-
-            <div class="page-desc">
-                 <h1>Caravan</h1>
-                <p>Less fuel, less pollution, less stress: these are some of the many benefits of carpooling. And when it comes to traveling long-distance, saving gas and money becomes exponentially more important per mile.</p>
-                
-                <p>Caravan is a long-distance ride-sharing app concepted by YouTube intern <a href="http://shanesmithcs.com/"></a>Shane Smith</a>. We combined our brains so that he could use his computer science skills to develop the app while I used my design savviness to create its branding identity. The result was a compelling, unified product that would appeal to college students going home during their school breaks. Road trips just got a whole lot smoother.</p>
-                
-                
-
-            </div>
-            
-            <article class="project">
-
-                <div class="project-assets">
-
-                                        <div class="image">
-                        <div data-picture>
-                            <div data-src="img/caravan_sketch.png"></div>
-                            <div data-src="img/caravan_sketch.png" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-
-                            <noscript>
-                                <img src="img/caravan_sketch.png" alt="" />
-                            </noscript>
-                        </div>
-                    </div>                    
+						<li class="column">
+<img src="images/caravan_sketch.png">
+						</li>
+					</ul>                     
                     
+                    <br><br><br>
                     
-                                        <div class="image">
-                        <div data-picture>
-                            <div data-src="img/caravan_firstiterations.png"></div>
-                            <div data-src="img/caravan_firstiterations.png" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-
-                            <noscript>
-                                <img src="img/caravan_firstiterations.png" alt="" />
-                            </noscript>
-                        </div>
-                    </div>
+					<ul class="columns columns-2">
+						<li class="column">
+<img src="images/caravan_logos.png">
+						</li>
+                        
+                        <li class="column">
+                        <h3>Logo</h3>
+                            
+                            <p>I avoided using a predictable car logo that would look like any generic ride-sharing app. Instead, I leaned heavily towards incorporating wheels, since they are universal for any modes of transportation and essential tools for moving people forward. After going through several rounds of iterations, my team and I finalized the logo as it is today. I incorporated these qualities:</p>
+                            
+                            <ul>
+                        
+                        <li><strong>Location marker icon.</strong> Rather than the previous wheel iterations, I chose to portray a location marker because it clearly conveyed the app's function without being too abstract.</li>
                     
-                   <div class="page-desc">  
-                <p>I compiled a branding questionnaire to help me get a better understanding of Shane's vision of his app's identity. Based on his responses, I sketched various logo ideas. I avoided using a predictable car logo that would look like any generic ride-sharing app. Instead, I leaned heavily towards incorporating wheels, since they are universal for any modes of transportation and essential tools for moving people forward.</p>
-                       
-                       <p>My first round of iterations were influenced by the following qualities:</p>
-                
-                <ul>
-                
-                    <li><strong>Minimalism.</strong> A simple, minimalist, and flat design presents a clear and straightforward experience of the app.</li>
-                    <li><strong>Connectivity.</strong> Dots represent the network of people that are integral to the app's function, and match the circular theme of the logo.</li>
-                    <li><strong>Cool colors.</strong> Caravan is unique because it provides long distance rides, so many users will likely be riding in the middle of the evening. These colors are reminiscent of night time, and blue reflects being progressive and inventive.</li>
-                
-                </ul>
-                    
-                    
-                </p>
-                </div>                    
-                    
-                    
-                    
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/caravan_iterations.png"></div>
-                            <div data-src="img/caravan_iterations.png" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <noscript>
-                                <img src="img/caravan_iterations.png" alt="" />
-                            </noscript>
-                        </div>
-                    </div>
-                </div>             
-
-
- <div class="page-desc">  
-     <p>I narrowed down the logo decision and went through several more rounds of revising dot size and placement, as well as experimented with new color schemes. I finalized the logo to incorporate these new qualities:</p> 
-                
-                <ul>
-                
-                    <li><strong>Location marker icon.</strong> Rather than the previous wheel iterations, I chose to portray a location marker because it clearly conveyed the app's function without being too abstract.</li>
                     <li><strong>Dot size variations.</strong> The dots from the initial iterations remained here because of their strong resonance for connectivity. This time, I varied the dot sizes to make the 'C' of the logo stand out more.</li>
-                    <li><strong>Warm color scheme.</strong> The cool colors from the initial iterations had too much of a nightclub vibe. I settled for red and orange hues reminiscent of a sunset. This still incorporated the unique experience of long-distance rides, in which users are likely to see sunsets during their long hours riding together.</li></ul>
+                    
+                    <li><strong>Warm color scheme.</strong> The red and orange hues are reminiscent of a sunset, incorporating the unique experience of long-distance rides, in which users are likely to see sunsets during their long hours together. The colors also give a vintage vibe, which influenced my illustrations.</li>
+                    
+                    </ul>
+                            
+                        </li>
 
                 
-                    
-                    
-                </p>
+                
                 </div>
-            
-            
-            
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/caravan_mockup_phone.png"></div>
-                            <div data-src="img/caravan_mockup_phone.png" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <noscript>
-                                <img src="img/caravan_mockup_phone.png" alt="" />
-                            </noscript>
-                        </div>
-                    </div>
+  
+        
+				<figure>
+			 		<img src="images/caravan_graphicstandard.png" class="py4">
+			 	</figure>
     
-                     <div class="image">
-                        <div data-picture>
-                            <div data-src="img/caravan_websitemockup.jpg"></div>
-                            <div data-src="img/caravan_websitemockup.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <noscript>
-                                <img src="img/caravan_websitemockup.jpg" alt="" />
-                            </noscript>
-                        </div>
-                    </div>   
-    
-    
-                </div>   
-    
-                
-    
-            </article>
-   
-        <!--END .site-content-->
-        </section>
+        
+        				<figure>
+			 		<img src="images/caravan_illustrations.png" class="py4">
+			 	</figure>
+                    
+                            				<figure>
+			 		<img src="images/caravan_phones.png" class="py4">
+			 	</figure>
+                    
+                                                				<figure>
+			 		<img src="images/caravan_website.jpg" class="py4">
+			 	</figure>
+        
+	<br><br><br>
+
+				<div class="pagination clearfix py4">
+					<a href="davis.html" class="left button">
+						<svg class="icon" data-icon="chevron-left" viewBox="0 0 32 32" style="fill:currentcolor"><path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path></svg>
+						Previous Project: Health Student Review
+					</a>
+					<a href="caravan.html" class="right button">
+						Next Project: Miscellaneous Works
+						<svg class="icon" data-icon="chevron-right" viewBox="0 0 32 32" style="fill:currentcolor"><path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path></svg>
+					</a>
+				</div>
+			</section>
+	
+		</main>
+
+		<footer>
+			<div class="container clearfix">
+				<div class="sm-col sm-col-12 md-col-6 lg-col-6">
+
+					<div class="copyright">
+						<p>Reach out to Cindy in other places.</p>
+					</div>
+
+				</div>
+				<div class="sm-col sm-col-12 md-col-6 lg-col-6">
+
+					<div class="social center">
+						<a href="mailto:emailcindypham@gmail.com" class="support bold">Email</a>
+						<a href="http://linkedin.com/in/cinpham" class="linked">in</a>
+                        <a href="http://facebook.com/cindyphamfb" class="face">f</a>
+						<a href="http://instagram.com/peein2thewind" class="tweet">ig</a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
 
 
- 
-        <nav role="navigation">
-            <ul class="cd-pagination animated-buttons custom-icons">
-                <li class="button"><a href="wandr.html"><i>Previous</i></a></li>
-                <li class="button-main"><a href="index.html"><i>Portfolio</i></a></li>
+   		<a href="#0" class="backtotop inline-block fixed overflow-hidden z4">Top</a>
 
-            </ul>
-        </nav> 
-    </div>
+	 
+		<!-- JS -->
+		<script type="text/javascript">
+			// Add a script element as a child of the body
+			function downloadJSAtOnload() {
+				var element = document.createElement("script");
+				element.src = "js/sub/min/all.min.js";
+				document.body.appendChild(element);
+			}
 
-    <script src="scripts/jquery-2.1.4.min.js"></script>
-    <script src="scripts/jquery.fitvids.js"></script>
-    <script src="scripts/jquery.imagesloaded.min.js"></script>
-    <script src="scripts/main.js"></script>  
- 
+			// Check for browser support of event handling capability
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
+		<!-- /JS -->
 
-</body>
+
+	</body>
 </html>

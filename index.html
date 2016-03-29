@@ -1,228 +1,301 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cindy Pham</title>
+	<head>
+		<style data-above-the-fold="true">
+			::-moz-focus-inner{border:0;padding:0}
+			body{margin:0;font-family:"Expletus Sans",Helvetica,sans-serif;line-height:1.875;font-size:100%;-webkit-font-smoothing:antialiased;letter-spacing:.02rem}
+			p,ul{font-size:1.125rem;margin-top:0;margin-bottom:1rem}
+			ul{padding-left:2rem}
+			img{border:0;height:auto;max-width:100%;vertical-align:middle}
+			.h3{font-size:1.75rem}
+			body{color:#5c5c5c}
+			a{color:#000000;text-decoration:none}
+			a:hover{text-decoration:underline}
+			.button-gray:is-active{box-shadow:inset 0 0 0 32px rgba(0,0,0,.125),inset 0 2px 3px 0 rgba(0,0,0,.25)}
+			.field-dark::placeholder{color:rgba(255,255,255,.75)}
+			.bg-blue{background-color:#143893}
+			.backtotop{height:48px;width:48px;border-radius:50%;bottom:1rem;right:1rem;text-indent:100%;white-space:nowrap;background:url(images/top-arrow.svg) center 50% no-repeat rgba(0,0,0,.8);visibility:hidden;opacity:0;-webkit-transition:opacity .3s 0s,visibility 0s .3s;-moz-transition:opacity .3s 0s,visibility 0s .3s;transition:opacity .3s 0s,visibility 0s .3s}
+			footer{height:80px;line-height:80px;border:1px solid #eee}
+			footer .social a{float:left;line-height:80px;text-decoration:none;color:#fff;cursor:pointer;width:20%;font-size:1.4em}
+			footer .social a:hover{background-color:#333}
+			footer .social .linked{background-color:#1E83AE}
+			footer .social .face{background-color:#3D5B94}
+			footer .social .tweet{background-color:#3DACDD}
+			footer .social .support{background-color:#143893;font-size:1rem;width:40%;letter-spacing:.1em}
+			footer .copyright p{font-size:1rem;line-height:80px;text-transform:capitalize;letter-spacing:1px;margin:0;text-align:center}
+			footer .copyright p .made{display:none}
+			@media (min-width:52em){footer .copyright p{text-align:left}
+			footer .copyright p .made{display:inline-block}}
+			.header{background:rgba(0,0,0,.5);height:80px;width:100%;z-index:9999}
+			.logo{top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);left:1rem}
+			.logo a{color:#fff;text-decoration:none;font-family:"Text Me One",Helvetica,sans-serif}
+			.main-nav{top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);right:5rem}
+			.main-nav a{color:#fff;text-decoration:none;font-size:.875rem}
+			.main-nav a:hover{border-bottom:1px solid #efcc00}
+			.responsive-nav-trigger{right:1rem;top:15px;height:48px;width:48px;background:rgba(0,0,0,.5);border-radius:50%}
+			.responsive-nav-trigger .menu-icon{left:50%;top:50%;bottom:auto;right:auto;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);-o-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);width:18px;height:2px;background-color:#fff;-webkit-transition:background-color .3s;-moz-transition:background-color .3s;transition:background-color .3s}
+			.responsive-nav-trigger .menu-icon::after,.responsive-nav-trigger .menu-icon::before{content:'';width:100%;height:100%;position:absolute;background-color:#fff;right:0;-webkit-transition:-webkit-transform .3s,top .3s,background-color 0s;-moz-transition:-moz-transform .3s,top .3s,background-color 0s;transition:transform .3s,top .3s,background-color 0s}
+			.responsive-nav-trigger .menu-icon::before{top:-5px}
+			.responsive-nav-trigger .menu-icon::after{top:5px}
+			.responsive-nav{height:100%;width:100%;background:rgba(0,0,0,.5);padding:50px 0;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:auto;-webkit-overflow-scrolling:touch;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;transition-property:transform;-webkit-transition-duration:.4s;-moz-transition-duration:.4s;transition-duration:.4s}
+			.responsive-nav li{margin:.2em 0;text-transform:capitalize}
+			.responsive-nav li:first-child{padding-top:80px}
+			.responsive-nav li a{color:#fff;text-decoration:none}
+			.responsive-nav li a:hover{color:#efcc00}
+			.large-header{box-sizing:border-box;width:100%;padding:0;position:relative;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}
+			.bg-blue{-webkit-animation:color-pulse 10s infinite;-moz-animation:color-pulse 10s infinite;-o-animation:color-pulse 10s infinite;animation:color-pulse 10s infinite;background-image:url(../../images/noise.png)}
+			.hero-title{padding:0;top:50%;left:50%;-webkit-transform:translate3d(-50%,-50%,0);transform:translate3d(-50%,-50%,0);color:#fff;font-weight:400}
+			.hero-title p{font-size:2.5rem;line-height:2.5rem}
+			@media (min-width:40em){.header{height:120px;background:0 0;box-shadow:none}
+			.hero-title p{font-size:4rem;line-height:4rem}
+			.responsive-nav-trigger{right:5rem}
+			.logo{left:5rem}}
+			@media (min-width:64em){.header{-webkit-transition:background-color .3s;-moz-transition:background-color .3s;transition:background-color .3s;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden}}
+			ul.filteroptions{height:60px;margin-top:120px}
+			ul.filteroptions li{height:60px;display:inline}
+			ul.filteroptions li a{font-size:.875em;color:#333;line-height:40px;text-decoration:none;margin:0 12px;padding:10px 0}
+			ul.filteroptions li a:hover{color:#efcc00}
+			ul.filteroptions li a.active{border-top:1px solid #efcc00;color:#efcc00}
+			.portfolio .box{width:100%}
+			.portfolio .box a{text-decoration:none}
+			.portfolio .box img{width:100%}
+			.portfolio .box:hover .info{opacity:1}
+			.portfolio .box .text{color:#fff;padding:4rem 1rem;border:none;display:block}
+			.portfolio .box .title{text-rendering:optimizeLegibility;color:#efcc00;font-size:1.5rem;line-height:1rem}
+			.portfolio .box .type{padding-top:.5rem;color:#777;font-size:1rem;text-transform:none}
+			@media (min-width:40em){.portfolio img{width:100%}}
+			@media (min-width:52em){.portfolio .box{width:47%;margin:1.5%}}
+			@media (min-width:64em){.portfolio .box{width:30%;margin:1.5%}}
+			.container{max-width:64em;margin-left:auto;margin-right:auto}
+			@media (min-width:40em){.sm-col{float:left;box-sizing:border-box}
+			.sm-col-12{width:100%}}
+			@media (min-width:52em){.md-col-6{width:50%}}
+			@media (min-width:64em){.lg-col-6{width:50%}}
+			.absolute{position:absolute}
+			.fixed{position:fixed}
+			.top-0{top:0}
+			.left-0{left:0}
+			.z2{z-index:2}
+			.z4{z-index:4}
+			.block{display:block}
+			.inline-block{display:inline-block}
+			.overflow-hidden{overflow:hidden}
+			.clearfix:after,.clearfix:before{content:" ";display:table}
+			.clearfix:after{clear:both}
+			.md-show{display:none!important}
+			@media (min-width:52em){.md-show{display:block!important}}
+			@media (min-width:52em){.md-hide{display:none!important}}
+			.bold{font-weight:700}
+			.italic{font-style:italic}
+			.caps{text-transform:uppercase;letter-spacing:.1em}
+			.center{text-align:center}
+			.m0{margin:0}
+			.ml2{margin-left:1rem}
+			.mx-auto{margin-left:auto;margin-right:auto}
+			.p2{padding:1rem}
+			.px3{padding-left:2rem;padding-right:2rem}
+			.py4{padding-top:4rem;padding-bottom:4rem}
+		</style>
  
-    <link rel="stylesheet" href="style.css" media="screen" />
-   
+	
 
-    <link href='http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cindy Pham</title>
+		<meta name="description" content="Portfolio Premium Portfolio Theme" />
+		<meta name="keywords" content="theme,template,kirby,portfolio,personal" />
+		<meta name="author" content="Aristotheme" />
+		<link rel="shortcut icon" href="../favicon.ico">
 
-     <script src="scripts/modernizr.js"></script>
+		<!-- CSS -->
+		<script>
+			var cb = function() {
+			var l = document.createElement('link'); l.rel = 'stylesheet';
+			l.href = 'css/min/all.min.css';
+			var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+			};
+			var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+			webkitRequestAnimationFrame || msRequestAnimationFrame;
+			if (raf) raf(cb);
+			else window.addEventListener('load', cb);
+		</script>
 
-</head>
-
-<body>
-
-
-    
-    <a href="#cd-nav" class="cd-nav-trigger">Menu 
-        <span class="cd-nav-icon"></span>
-
-        <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-            <circle fill="transparent" stroke="#90D4C5" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-        </svg>
-    </a>
-        
-    <div id="cd-nav" class="cd-nav">
-        <div class="cd-navigation-wrapper">
-            <div class="cd-half-block">
-
-
-                <nav>
-                    <ul class="cd-primary-nav">
-                        <li><a href="index.html" class="selected">Showcase</a></li>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="cindyphamresume.pdf">Resume</a></li>
-                    </ul>
-                </nav>
-            </div><!-- .cd-half-block -->
-            
-            <div class="cd-half-block">
-                <address>
-                    <ul class="cd-contact-info">
-                        <li><a href="mailto:emailcindypham@gmail.com">emailcindypham@gmail.com</a></li>
-                        <li>408-406-7449</li>
-                    </ul>
-                    <ul class="cd-contact-socials">
-                        <li><a href="http://linkedin.com/in/cinpham">LinkedIn</a></li>
-                        <li><a href="http://facebook.com/cindyphamfb">Facebook</a></li>
-                        <li><a href="http://instagram.com/peein2thewind">Instagram</a></li>   
-                        <li><a href="http://peeintothewind.tumblr.com">Tumblr</a></li>    
-                    </ul>
-                </address>
-            </div> <!-- .cd-half-block -->
-        </div> <!-- .cd-navigation-wrapper -->
-    </div> <!-- .cd-nav -->
-
-    <div class="site-container">
-
-        <header class="site-header cf">
-            <div class="site-title"></div>
-
-            <div class="cf"></div>
-
-            <div class="site-tagline">
-                <p>Hello, I'm <strong>Cindy Pham.</strong> I'm a visual designer, thinker, and storyteller.</p>
-            </div>
-            
-        </header><!-- / .site-header -->
-
-        <section class="site-content">
-            
-            
-            <div class="projects-feed cf">
-
-                <article class="project cf">
-                    <a href="cprguide.html" title="CPR Guide">
-                        <div class="thumb">
-                            <div data-picture data-alt="">
-                                <div data-src="img/cpr_mockup.png"></div>
-              
-                                <noscript>
-                                    <img src="img/cpr_mockup.png" alt="" />
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <div class="project-content-container">
-                            <div class="project-content">
-                                <div class="table">
-                                    <div class="table-cell">
-                                        <h2 class="thumbnail-title">CPR Guide</h2>
-                                        
-                                        <p class="thumbnail-description">UI/UX, concept, wearables</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="overlay"></div>
-                    </a>
-                </article>
-                <article class="project cf">
-                    <a href="chopchop.html" title="Chop Chop">
-                        <div class="thumb">
-                            <div data-picture data-alt="">
-                                <div data-src="img/chopchop_mockup.png"></div>
-                                
-                                
-                                <noscript>
-                                    <img src="img/chopchop_mockup.png" alt="" />
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <div class="project-content-container">
-                            <div class="project-content">
-                                <div class="table">
-                                    <div class="table-cell">
-                                        <h2 class="thumbnail-title">Chop Chop</h2>
-                                        
-                                        <p class="thumbnail-description">UI/UX, mobile apps</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="overlay"></div>
-                    </a>
-                </article>
-                <article class="project cf">
-                    <a href="wandr.html" title="Wandr">
-                        <div class="thumb">
-                            <div data-picture data-alt="">
-                                <div data-src="img/wandr_thumbnail.png"></div>
-       
-                                <noscript>
-                                    <img src="img/wandr_thumbnail.png" alt="" />
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <div class="project-content-container">
-                            <div class="project-content">
-                                <div class="table">
-                                    <div class="table-cell">
-                                        <h2 class="thumbnail-title">Wandr</h2>
-                                        
-                                        <p class="thumbnail-description">concept, ui/ux, mobile apps</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="overlay"></div>
-                    </a>
-                </article>
-                <article class="project cf">
-                    <a href="caravan.html" title="Caravan">
-                        <div class="thumb">
-                            <div data-picture data-alt="">
-                                <div data-src="img/caravan_mug.png"></div>
-                                
-
-                                <noscript>
-                                    <img src="img/caravan_mug.png" alt="" />
-                                </noscript>
-                            </div>
-                        </div>
-
-                        <div class="project-content-container">
-                            <div class="project-content">
-                                <div class="table">
-                                    <div class="table-cell">
-                                        <h2 class="thumbnail-title">Caravan</h2>
-                                        
-                                        <p class="thumbnail-description">branding, mobile apps</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
+		<!-- no JS? Put fallback CSS links here. -->
+		<noscript>
+			<link href="css/min/all.min.css" rel="stylesheet">
+		</noscript>
+		<!-- /CSS -->
  
-                        <div class="overlay"></div>
-                    </a>
-                </article>
-                <article class="project cf">
-                    <a href="cindyphamresume.pdf" title="Resume">
-                        <div class="thumb">
-                            <div data-picture data-alt="">
-                                <div data-src="img/resume_thumbnail.png"></div>
-                                
+	</head>
+	<body>
 
-                                
-                                <noscript>
-                                    <img src="resume_thumbnail.png" alt="" />
-                                </noscript>
-                            </div>
-                        </div>
+		<header class="header absolute top-0 left-0">
+			<div class="logo absolute block h3 m0 caps bold"><a href="index.html">cindy pham</a></div>
 
-           
-                        
-                        <div class="overlay"></div>
-                    </a>
-                </article>
- 
-            <!--END .projects-feed-->
-            </div>
-                        
-        <!--END .site-content-->
-        </section>
+			<nav>
+				<ul class="main-nav absolute md-show">
+					<li class="inline-block ml2 caps bold"><a href="index.html">Home</a></li>
+					<li class="inline-block ml2 caps bold"><a href="about.html">About</a></li>
+					<li class="inline-block ml2 caps bold"><a href="cindyphamresume.pdf">resume</a></li>
+				</ul>
+			</nav> <!-- nav -->
+
+			<a class="responsive-nav-trigger absolute md-hide inline-block" href="#0">
+				<span class="menu-icon absolute"></span>
+			</a> <!-- responsive-nav-trigger -->
+		</header>
+
+		<nav>
+			<ul class="responsive-nav fixed left-0 top-0 center z2">
+				<li><a class="caps inline-block p2 bold" href="index.html">Home</a></li>
+				<li><a class="caps inline-block p2 bold" href="about.html">About</a></li>
+				<li><a class="caps inline-block p2 bold" href="blog.html">resume</a></li>
+			</ul>
+		</nav>
+
+		<section id="hero">
+			<div id="large-header" class="large-header bg-dark-gray m0" style="height: 377px;">
+				<canvas id="animated-background"></canvas>
+				<div class="hero-title absolute m0 center caps"><p>cindy can <strong>create</strong></p></div>
+			</div>
+		</section>
+
+		<main id="main" class="container px3" role="main">
+
+			<ul class="filteroptions option-set md-show caps center">
+
+				<li><a href="" data-filter="*" class="active">All</a></li>
+
+				<li><a href="" data-filter=".mobile">Mobile</a></li>
+
+				<li><a href="" data-filter=".brand">Brand</a></li>
+
+				<li><a href="" data-filter=".graphics">Graphics</a></li>
+			</ul>
 
 
+			<div id="portfolio" class="py4 portfolio">
 
-    </div>
 
-    <script src="scripts/jquery-2.1.4.min.js"></script>
-    <script src="scripts/jquery.fitvids.js"></script>
-    <script src="scripts/jquery.imagesloaded.min.js"></script>
-    <script src="scripts/main.js"></script>  
- 
+				<div class="box mx-auto m0 overflow-hidden mobile">
+					<a href="cprguide.html">
+						<img src="images/cpr_thumbnail.png" alt="">
+						<span class="info">
+							<span class="text center">
+								<span class="title caps bold">CPR Guide</span>
+								<span class="type italic"><br/>UI / UX</span>
+							</span>
+						</span>
+					</a>
+				</div>
 
-</body>
+				<div class="box mx-auto m0 overflow-hidden brand">
+					<a href="dcf.html">
+						<img src="images/dcf_thumbnail.png" alt="">
+						<span class="info">
+							<span class="text center">
+								<span class="title caps bold">Design Careers</span>
+								<span class="type italic"><br/>Project Lead / Branding</span>
+							</span>
+						</span>
+					</a>
+				</div>
+
+				<div class="box mx-auto m0 overflow-hidden graphics">
+					<a href="davis.html">
+						<img src="images/davis_thumbnail.png" alt="">
+						<span class="info">
+							<span class="text center">
+								<span class="title caps bold">this is davis</span>
+								<span class="type italic"><br/>Graphics / Environmental</span>
+							</span>
+						</span>
+					</a>
+				</div>
+
+				<div class="box mx-auto m0 overflow-hidden brand">
+					<a href="health.html">
+						<img src="images/health_thumbnail.png" alt="">
+						<span class="info">
+							<span class="text center">
+								<span class="title caps bold">health student review</span>
+								<span class="type italic"><br/>Branding / Print</span>
+							</span>
+						</span>
+					</a>
+				</div>
+
+				<div class="box mx-auto m0 overflow-hidden mobile graphics brand">
+					<a href="caravan.html">
+						<img src="images/caravan_thumbnail.png" alt="">
+						<span class="info">
+							<span class="text center">
+								<span class="title caps bold">Caravan</span>
+								<span class="type italic"><br/>Branding / Illustration</span>
+							</span>
+						</span>
+					</a>
+				</div>                
+                
+				<div class="box mx-auto m0 overflow-hidden mobile graphics">
+					<a href="misc.html">
+						<img src="images/misc_thumbnail.png" alt="">
+						<span class="info">
+							<span class="text center">
+								<span class="title caps bold">Misc.</span>
+								<span class="type italic"><br/>UI / UX / Graphics</span>
+							</span>
+						</span>
+					</a>
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer>
+			<div class="container clearfix">
+				<div class="sm-col sm-col-12 md-col-6 lg-col-6">
+
+					<div class="copyright">
+						<p>Reach out to Cindy in other places.</p>
+					</div>
+
+				</div>
+				<div class="sm-col sm-col-12 md-col-6 lg-col-6">
+
+					<div class="social center">
+						<a href="mailto:emailcindypham@gmail.com" class="support bold">Email</a>
+						<a href="http://linkedin.com/in/cinpham" class="linked">in</a>
+                        <a href="http://facebook.com/cindyphamfb" class="face">f</a>
+						<a href="http://instagram.com/peein2thewind" class="tweet">ig</a>
+					</div>
+
+
+			</div>
+		</footer>
+
+
+   		<a href="#0" class="backtotop inline-block fixed overflow-hidden z4">Top</a>
+
+	 
+		<!-- JS -->
+		<script type="text/javascript">
+			// Add a script element as a child of the body
+			function downloadJSAtOnload() {
+				var element = document.createElement("script");
+				element.src = "js/main/min/all.min.js";
+				document.body.appendChild(element);
+			}
+
+			// Check for browser support of event handling capability
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
+		<!-- /JS -->	
+	</body>
 </html>
