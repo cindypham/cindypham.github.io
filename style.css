@@ -20,8 +20,6 @@ Description: A template by Aristotheme.
 /*  - Grid
 /*  - Footer Styles
 /*  - Media Queries
-
-
 /*=================================*/
 
 /*=================================*/
@@ -635,6 +633,18 @@ div.image img { width: 100%; }
     color: #BBBBBB;
     margin-top: 28px;
 }
+
+
+.h3 {
+    font-size: 2.3rem;
+    font-family: 'Righteous';
+}
+
+.h4 {
+    font-size: 1.8 rem;
+    font-family: 'Righteous';
+}
+
 .project-meta > span::before {
     content: "\002F";
     margin: 0 5px 0 3px;
@@ -1326,7 +1336,7 @@ nav[role="navigation"] {
 
     h3 {
         font-size: 2.3rem;
-                        font-family: 'Righteous'
+                        font-family: 'Righteous';
     }
 
     h4 {
