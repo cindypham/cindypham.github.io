@@ -69,6 +69,7 @@ a:hover, a:active {
 h1,h2,h3 {
     font-weight: bold;
     line-height: 1.5;
+    font-family: 'Righteous';
 }
 h1 {
     font-size: 2.2rem;
@@ -83,10 +84,12 @@ h2 {
 
 h3 {
     font-size: 1.4rem;
+    font-family: 'Righteous';
 }
 
 h4 {
     font-size: 1.2rem;
+    font-family: 'Righteous';
 }
 
 h5 {
@@ -101,7 +104,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+   
     margin: 0 0 10px;
 }
 h4,
@@ -634,16 +637,6 @@ div.image img { width: 100%; }
     margin-top: 28px;
 }
 
-
-.h3 {
-    font-size: 2.3rem;
-    font-family: 'Righteous';
-}
-
-.h4 {
-    font-size: 1.8 rem;
-    font-family: 'Righteous';
-}
 
 .project-meta > span::before {
     content: "\002F";
